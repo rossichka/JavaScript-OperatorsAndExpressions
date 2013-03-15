@@ -1,0 +1,19 @@
+﻿<html>
+<head>
+	<title>5.BooleanIfTheBit3Is1Or0</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+	    //Write a boolean expression for finding if the bit 3 (counting from 0) of a given integer is 1 or 0.
+	    var x = 541;
+	    var i = 1;
+	    var bit = i << 3;
+	    jsConsole.writeLine(x);
+	    jsConsole.writeLine("The bit at position 3 of that number is:");
+	    jsConsole.writeLine((x & bit) != 0 ? 1 : 0);
+	</script>
+</body>
+</html>

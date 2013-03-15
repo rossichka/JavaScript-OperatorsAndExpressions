@@ -1,0 +1,29 @@
+﻿<html>
+<head>
+	<title>9.WithinCircleAndOutsideRectangle</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+	    //Write an expression that checks for given point (x, y) if it is within the circle K( (1,1), 3)
+	    //and out of the rectangle R(top=1, left=-1, width=6, height=2).
+
+	    var x = 6;
+	    var y = 2.0;
+	    jsConsole.writeLine("Provided coordinates of a point are: " + x + ", " + y);
+
+	    jsConsole.writeLine("The point is within the circle K((1,1), 3): ");
+	    jsConsole.writeLine((x * x + y * y) <= 4);
+	    
+	    var a = x < -1;
+	    var b = x > 5;
+	    var c = y > 1;
+	    var d = y < -1;
+	    var e = a && b && c && d;
+	    jsConsole.writeLine("Is the point out of the rectangle R (top=1, left=-1, width=6, height=2): ");
+	    jsConsole.writeLine(e);	    
+	</script>
+</body>
+</html>

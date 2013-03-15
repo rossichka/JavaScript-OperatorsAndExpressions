@@ -1,0 +1,29 @@
+﻿<html>
+<head>
+	<title>7.PrimeNumberLessOrEqualTo100</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+	    //Write an expression that checks if given positive integer number n (n ≤ 100) is prime. E.g. 37 is prime.
+	    var n = 75;
+	    var divider = 2;
+	    var maxDivider = Math.sqrt(n);
+	    var prime = true;
+
+	    while (prime && (divider <= maxDivider))
+	    {
+	        if (n % divider == 0)
+	        {
+	            prime = false;
+	        }
+	        divider++;
+	    }
+
+	    jsConsole.writeLine(n + " is prime: " +  prime);
+	    
+	</script>
+</body>
+</html>
